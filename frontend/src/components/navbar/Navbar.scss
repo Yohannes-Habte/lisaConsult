@@ -1,0 +1,246 @@
+@import "../../styles/Variables.scss";
+
+.header-container {
+  background-color: $header;
+
+  .language-register-login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: $nav-menu1;
+
+    .header-discount-text {
+      color: red;
+    }
+
+    .register-login {
+      & a {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background: white;
+
+    .whereToInvestImage,
+    .logo-container {
+      height: 10rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mission-logo {
+        border-radius: 0.3rem;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .successful-investor {
+        border-radius: 0.3rem;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
+
+  .text-logo-header-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: $nav-menu2;
+
+    .header-nav-menu {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+/* Tablet screen size */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .header-container {
+    background-color: $header;
+
+    .language-register-login-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: $nav-menu1;
+
+      .header-discount-text {
+        color: red;
+      }
+
+      .register-login {
+        & a {
+          margin-right: 2rem;
+        }
+
+        .languages  {
+          font-size: 1.2rem;
+          padding: 0.3rem;
+        }
+      }
+    }
+
+    .logo-search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      background: white;
+
+      .whereToInvestImage,
+      .logo-container {
+        height: 10rem;
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .mission-logo {
+          border-radius: 0.3rem;
+          transition: 0.4s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .successful-investor {
+          border-radius: 0.3rem;
+          transition: 0.4s;
+
+          &:hover {
+            transform: scale(1.08);
+          }
+        }
+      }
+    }
+
+    .text-logo-header-nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      background-color: $nav-menu2;
+
+      .header-nav-menu {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+
+    .menu-icon {
+      display: none;
+    }
+  
+  }
+}
+
+/* Laptop screen size */
+@media screen and (max-width: 700px) {
+  .header-container {
+    .header-navbar {
+      position: relative;
+  
+      .language-register-login-container {
+        width: 100%;
+        background-color: $nav-menu2;
+        height: 2.5rem;
+        .header-discount-text {
+          display: none;
+        }
+        .register-login {
+          width: 80%;
+          padding: 0.5rem 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.2rem;
+        }
+      }
+  
+      .logo-search {
+        display: flex;
+        flex-direction: column;
+  
+        .whereToInvestImage {
+          display: none;
+        }
+      }
+  
+      .text-logo-header-nav-menu {
+        & h3 {
+          display: none;
+        }
+  
+        .header-nav-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          position: fixed;
+          top: 2.5rem;
+          right: -300px;
+          width: 300px;
+          height: 100vh;
+          background-color: #d6e6fa;
+          padding: 2rem;
+          transition: 0.5s;
+  
+          .header-nav-item {
+            font-size: 1.3rem;
+            padding: 1rem 0;
+            transition: 0.3s;
+          }
+        }
+  
+        .active {
+          right: 0px;
+        }
+      }
+  
+      .menu-icon {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        right: 1rem;
+  
+        .fa-times {
+          font-size: 2rem;
+        }
+  
+        .fa-bars {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  
+}
+
+

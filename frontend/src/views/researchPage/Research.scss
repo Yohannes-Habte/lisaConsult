@@ -1,0 +1,101 @@
+@import "../../styles/Variables.scss";
+
+.researchPage {
+  width: $mobile;
+  margin: 1rem auto;
+
+  .research-container {
+
+    .research-title {
+      color: $title;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 2.5rem;
+    }
+
+    .research-items-container {
+      
+      .research-items {
+        box-shadow: 0 0 2px;
+        border-radius: 0.3rem;
+        padding: 1rem;
+        margin: 1rem 0;
+
+        .image-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & img {
+            width: 100%;
+            height: 13rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            transition: 1s;
+  
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+
+        .research-article-title {
+          text-align: center;
+        }
+
+        .research-paragraph {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          padding: 1rem 0.2rem;
+        }
+
+        .research-ordered-list li {
+          font-size: 1rem;
+          list-style-type: number;
+          padding: 0.5rem 0;
+          margin: 0 0.5rem 0 1rem;
+  
+          & a {
+            font-size: 1.1rem;
+            color: blue;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Tablet screen size */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .researchPage {
+    width: $tablet;
+    margin: 1rem auto;
+
+    .research-items-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+    }
+  }
+  
+}
+
+/* Tablet screen size */
+@media screen and (min-width: 1024px) {
+  .researchPage {
+    width: $laptop;
+    margin: 1rem auto;
+
+    .research-items-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+    }
+  }
+  
+}
+
+

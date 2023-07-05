@@ -1,0 +1,81 @@
+@import "../../styles/Variables.scss";
+
+.servicePage-container {
+  width: $mobile;
+  margin: 1rem auto;
+
+  & span {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .service-page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: $title;
+  }
+
+  .courses-container {
+    .course {
+      padding: 1rem 2rem;
+      box-shadow: 0 0 2px;
+      border-radius: 0.2rem;
+
+      .course-title {
+        font-size: 1.8rem;
+      }
+
+      & p {
+        margin: 1rem 0;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: justify;
+      }
+
+      .join-us-link-container {
+        margin: 2rem 0 1rem 0;
+
+        .join-link {
+          padding: 0.5rem 1rem;
+          font-size: 2rem;
+          background-color: $button;
+          border-radius: 0.3rem;
+          cursor: pointer;
+          transition: 0.8s;
+
+          &:hover {
+            background-color: $button-hover;
+            color: $hover-font;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Tablet screen size */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .servicePage-container {
+    width: $tablet;
+    margin: 1rem auto;
+
+    .course{
+      margin: 1rem 0;
+    }
+  }
+}
+
+/* Labtop screen size */
+@media screen and (min-width: 1024px) {
+  .servicePage-container {
+    width: $laptop;
+    margin: 1rem auto;
+  }
+  .courses-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}

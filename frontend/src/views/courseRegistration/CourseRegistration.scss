@@ -1,0 +1,254 @@
+@import "../../styles/Variables.scss";
+
+.course-registration-page {
+  width: $mobile;
+  margin: 1rem auto;
+
+  .course-registration-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $header-color;
+    padding: 2rem;
+  }
+
+  .course-registration-legend {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(75, 47, 255);
+  }
+
+  .course-registration-form {
+    width: $mobile;
+    margin: auto;
+    padding: 1rem;
+
+    .course-registration-consent {
+      width: $mobile;
+      display: grid;
+      grid-template-columns: 3rem 1fr 5rem;
+
+      & span {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: blue;
+      }
+
+      .reset {
+        font-size: 1.1rem;
+      }
+    }
+
+    .course-registration-submit-btn {
+      grid-area: button;
+      background-color: $button;
+      border: solid 2px $title;
+      border-radius: 0.2rem;
+      padding: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    & input,
+    & select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: solid 2px $title;
+      border-radius: 0.3rem;
+    }
+  }
+}
+
+.course-registration-fieldset {
+  border: 2px solid green;
+  border-radius: 0.2rem;
+}
+
+/* Tablet screen size */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .course-registration-page {
+    width: $tablet;
+    margin: 1rem auto;
+
+    .course-registration-form {
+      width: $tablet;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "cotactDetail residenceAddress"
+        "consent consent"
+        "button button";
+      column-gap: 2rem;
+  
+      .course-registration-contact-detail {
+        grid-area: cotactDetail;
+      }
+  
+      .course-registration-residence-address-course {
+        grid-area: residenceAddress;
+  
+        .course-registration-courses-title {
+          margin-top: 0.6rem;
+        }
+      }
+  
+      .course-registration-consent-and-reset {
+        grid-area: consent;
+  
+        .course-registration-consent {
+          display: grid;
+          grid-template-columns: 3rem 1fr 19.5rem;
+          margin-left: -0.3rem;
+  
+          & span {
+            margin: 0.5rem 0 0 0.2rem;
+            font-size: 1.4rem;
+            color: blue;
+          }
+  
+          .checkbox-consent {
+            cursor: pointer;
+          }
+  
+          .reset {
+            width: 30%;
+            margin-left: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: $button-hover;
+              color: $hover-font;
+              border-radius: 0.2rem;
+            }
+          }
+        }
+      }
+  
+      .course-registration-submit-btn {
+        grid-area: button;
+        width: 20%;
+        background-color: $button;
+        border: solid 2px $title;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+  
+        &:hover {
+          background-color: $button-hover;
+          color: $hover-font;
+        }
+      }
+  
+      & input,
+      & select {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: solid 2px $title;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
+
+/* Labtop screen size */
+@media screen and (min-width: 1024px){
+  .course-registration-page {
+    width: 60%;
+    margin: 1rem auto;
+
+    .course-registration-form {
+      width: 85%;
+      margin: auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "cotactDetail residenceAddress"
+        "consent consent"
+        "button button";
+      column-gap: 2rem;
+  
+      .course-registration-contact-detail {
+        grid-area: cotactDetail;
+      }
+  
+      .course-registration-residence-address-course {
+        grid-area: residenceAddress;
+  
+        .course-registration-courses-title {
+          margin-top: 0.6rem;
+        }
+      }
+  
+      .course-registration-consent-and-reset {
+        grid-area: consent;
+  
+        .course-registration-consent {
+          display: grid;
+          grid-template-columns: 3rem 1fr 19.5rem;
+          margin-left: -0.3rem;
+  
+          & span {
+            margin: 0.5rem 0 0 0.2rem;
+            font-size: 1.4rem;
+            color: blue;
+          }
+  
+          .checkbox-consent {
+            cursor: pointer;
+          }
+  
+          .reset {
+            width: 30%;
+            margin-left: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: $button-hover;
+              color: $hover-font;
+              border-radius: 0.2rem;
+            }
+          }
+        }
+      }
+  
+      .course-registration-submit-btn {
+        grid-area: button;
+        width: 20%;
+        background-color: $button;
+        border: solid 2px $title;
+        border-radius: 0.2rem;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+  
+        &:hover {
+          background-color: $button-hover;
+          color: $hover-font;
+        }
+      }
+  
+      & input,
+      & select {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: solid 2px $title;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}

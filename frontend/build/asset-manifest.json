@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.baf8f14a.css",
-    "main.js": "./static/js/main.3b426279.js",
+    "main.js": "./static/js/main.fcd770bc.js",
     "static/media/investing.png": "./static/media/investing.55a95c82676a2ec4e577.png",
     "static/media/bg-13.png": "./static/media/bg-13.456849aa388005c6dab4.png",
     "static/media/bitcoin-1.png": "./static/media/bitcoin-1.3e1ba8b688615775e31f.png",
@@ -27,10 +27,10 @@
     "static/media/lisaConsult-logo.png": "./static/media/lisaConsult-logo.42581200f54b846bf39d.png",
     "index.html": "./index.html",
     "main.baf8f14a.css.map": "./static/css/main.baf8f14a.css.map",
-    "main.3b426279.js.map": "./static/js/main.3b426279.js.map"
+    "main.fcd770bc.js.map": "./static/js/main.fcd770bc.js.map"
   },
   "entrypoints": [
     "static/css/main.baf8f14a.css",
-    "static/js/main.3b426279.js"
+    "static/js/main.fcd770bc.js"
   ]
 }

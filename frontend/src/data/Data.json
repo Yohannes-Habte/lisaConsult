@@ -4,19 +4,19 @@
         "link": "/"
     },
     {
-        "title": "About Page",
+        "title": "Procedures Page",
         "link": "/home"
     },
     {
-        "title": "Service Page",
-        "link": "/service"
+        "title": "Courses Page",
+        "link": "/courses"
     },
     {
         "title": "Research Page",
         "link": "/research"
     },
     {
-        "title": "Research Page",
+        "title": "Contact Page",
         "link": "/contact"
     }
 ]

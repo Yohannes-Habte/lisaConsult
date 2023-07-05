@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./static/css/main.baf8f14a.css",
+    "main.js": "./static/js/main.82820825.js",
+    "static/media/investing.png": "./static/media/investing.55a95c82676a2ec4e577.png",
+    "static/media/bg-13.png": "./static/media/bg-13.456849aa388005c6dab4.png",
+    "static/media/bitcoin-1.png": "./static/media/bitcoin-1.3e1ba8b688615775e31f.png",
+    "static/media/ExponentialMovingAverage.png": "./static/media/ExponentialMovingAverage.92681c34ed7bf68cde8b.png",
+    "static/media/StochasticOscillator.png": "./static/media/StochasticOscillator.765187efd1fe45746d30.png",
+    "static/media/RSI.png": "./static/media/RSI.4872028f9cc71dfc0d85.png",
+    "static/media/bg-1.png": "./static/media/bg-1.1e15da6353609e557f73.png",
+    "static/media/MACD.png": "./static/media/MACD.929fe834441e89403640.png",
+    "static/media/OperatingEnvironment.png": "./static/media/OperatingEnvironment.88e11ee15140a9092c2f.png",
+    "static/media/book.jpg": "./static/media/book.9d35540544852b4ae131.jpg",
+    "static/media/PESTEL-Analysis-chart.png": "./static/media/PESTEL-Analysis-chart.ec6e4be8843b298ef401.png",
+    "static/media/SWOT-Analysis-Chart.png": "./static/media/SWOT-Analysis-Chart.9d5cfb87028683b3b715.png",
+    "static/media/real-estate.jpg": "./static/media/real-estate.e57cf47591d15999a118.jpg",
+    "static/media/ethereum-1.png": "./static/media/ethereum-1.54638b3b6dc576accfe5.png",
+    "static/media/individual-stock.png": "./static/media/individual-stock.75f4643904a22556a159.png",
+    "static/media/ETFs.png": "./static/media/ETFs.5389f8c850e29a07755f.png",
+    "static/media/index-funds.png": "./static/media/index-funds.95edc9578078a4b9db5e.png",
+    "static/media/mutual-funds.png": "./static/media/mutual-funds.b8585afb88a7244ac707.png",
+    "static/media/project.jpg": "./static/media/project.666963189130664b0e89.jpg",
+    "static/media/Porter's-Five-Forces-Analysis-Chart.png": "./static/media/Porter's-Five-Forces-Analysis-Chart.06f51f1e66eeb4377205.png",
+    "static/media/money-1.jpg": "./static/media/money-1.572211d2e2570e1a1546.jpg",
+    "static/media/journal.jpg": "./static/media/journal.a2a0d256ebe5b57e7847.jpg",
+    "static/media/lisaConsult-logo.png": "./static/media/lisaConsult-logo.42581200f54b846bf39d.png",
+    "index.html": "./index.html",
+    "main.baf8f14a.css.map": "./static/css/main.baf8f14a.css.map",
+    "main.82820825.js.map": "./static/js/main.82820825.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baf8f14a.css",
+    "static/js/main.82820825.js"
+  ]
+}
